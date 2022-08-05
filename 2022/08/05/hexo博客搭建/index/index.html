@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>hexo博客搭建 | 37Malcolm</title><meta name="keywords" content="hexo"><meta name="author" content="37Malcolm"><meta name="copyright" content="37Malcolm"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="博客初始化 命令行安装cnpm （加速以后的插件下载，建议git bash here 处安装） ​		命令：npm install -g cnpm –registry&#x3D;&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org ​		安装后验证：cnpm -v 出现版本号说明安装成功     2.命令行安装hexo （安装博客框架） ​	      	  命令：cnpm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo博客搭建">
+<meta property="og:url" content="http://example.com/2022/08/05/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index/index.html">
+<meta property="og:site_name" content="37Malcolm">
+<meta property="og:description" content="博客初始化 命令行安装cnpm （加速以后的插件下载，建议git bash here 处安装） ​		命令：npm install -g cnpm –registry&#x3D;&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org ​		安装后验证：cnpm -v 出现版本号说明安装成功     2.命令行安装hexo （安装博客框架） ​	      	  命令：cnpm">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/index.jpeg">
+<meta property="article:published_time" content="2022-08-05T09:10:49.000Z">
+<meta property="article:modified_time" content="2022-08-05T11:33:57.244Z">
+<meta property="article:author" content="37Malcolm">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/index.jpeg"><link rel="shortcut icon" href="/img/blog.png"><link rel="canonical" href="http://example.com/2022/08/05/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'hexo博客搭建',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-05 19:33:57'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/login1.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/index.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">37Malcolm</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">hexo博客搭建</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-05T09:10:49.000Z" title="发表于 2022-08-05 17:10:49">2022-08-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-05T11:33:57.244Z" title="更新于 2022-08-05 19:33:57">2022-08-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="hexo博客搭建"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="博客初始化"><a href="#博客初始化" class="headerlink" title="博客初始化"></a>博客初始化</h3><ol>
+<li><p>命令行安装cnpm （加速以后的插件下载，建议git bash here 处安装）</p>
+<p>​		命令：npm install -g cnpm –registry&#x3D;&#x3D;<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+<p>​		安装后验证：cnpm -v 出现版本号说明安装成功</p>
+</li>
+</ol>
+<p>  2.命令行安装hexo （安装博客框架）</p>
+<p>​	      	  命令：cnpm install -g hexo-cli</p>
+<p>​		   	 安装后验证：hexo -v 出现版本号说明安装成功</p>
+<ol start="3">
+<li><p>在电脑的某个地方新建一个名为HexoData的文件夹（名字可以随便取），比如我的是		D:\JAVA项目\HexoData</p>
+<p>​		这个文件夹将来就作为你存放代码的地方，所以最好不要随便放</p>
+<p>4.在D:\JAVA项目\HexoData 文件夹下右键打开 Git Bash</p>
+</li>
+</ol>
+<p>​				并依次执行以下命令</p>
+<p>​				hexo init 初始化命令，hexo会自动下载一些文件到这个目录，包括node_modules等</p>
+<p>​				hexo g 生成命令</p>
+<p>​				hexo s 启动服务</p>
+<p>说明：hexo s 是开启本地预览服务，打开浏览器访问 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容，说明博客初始化以及成功！</p>
+<h3 id="将博客部署到-github-个人主页上"><a href="#将博客部署到-github-个人主页上" class="headerlink" title="将博客部署到 github 个人主页上"></a>将博客部署到 github 个人主页上</h3><p>第一步：在D:\JAVA项目\HexoData目录下安装 hexo-deployer-git 插件 （git bash here 处安装）</p>
+<p>命令：npm install hexo-deployer-git –save</p>
+<p>说明：必须安装，否则执行hexo d 的话会报错</p>
+<p>第二步：编辑D:\JAVA项目\HexoData目录下的 _config.yml 文件, 在文件末尾修改配置文件：</p>
+<p>deploy:<br>   type: git<br>   repo: github上对应仓库的ssh 链接<br>    &#x2F;&#x2F;也可使用https地址，如：<a target="_blank" rel="noopener" href="https://github.com/Github%E7%94%A8%E6%88%B7%E5%90%8D/Github%E7%94%A8%E6%88%B7%E5%90%8D.github.io.git">https://github.com/Github用户名/Github用户名.github.io.git</a>             	branch: main</p>
+<p>hexo  clean   清除本地项目</p>
+<p>hexo g			重新生成	</p>
+<p>hexo s			开启本地预览</p>
+<p>hexo d			推送到GitHub</p>
+<h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p>注意：首先需要明白什么是站点配置文件，什么是主题配置文件。</p>
+<p>站点配置文件就是根目录下的配置文件，比如我的博客文件在 D:\JAVA项目\HexoData 下，那么站点配置文件就是 D:\JAVA项目\HexoData_config.yml，</p>
+<p>主题配置文件就是 D:\JAVA项目\HexoData\hexo-theme-matery_config.yml。</p>
+<p>另外注意，配置文件中的标点符号不要出现中文格式的标点符号，不然运行会出错。</p>
+<p>主题下载完成后，将站点配置文件中的 theme 值修改为你下载主题的文件名，此处为 hexo-theme-matery，那么值就修改为 theme: hexo-theme-matery</p>
+<p>一些站点配置文件的其他地方的修改：</p>
+<p>语言选择：如果为中文用户，则在 language: 后添加值 zh-CN，如果不修改，默认为英语；<br>网址修改：url: 的值为你的网址名，如 <a target="_blank" rel="noopener" href="http://xxxx.github.io,如果有域名,则修改为你的域名即可/">http://xxxx.github.io，如果有域名，则修改为你的域名即可</a>;<br>站点配置文件有个 per_page属性，建议修改为 6 的倍数，这样网站在适应设备时，有较好的显示效果。</p>
+<h3 id="创建标签页面-（首页的标签选项）"><a href="#创建标签页面-（首页的标签选项）" class="headerlink" title="创建标签页面 （首页的标签选项）"></a>创建标签页面 （首页的标签选项）</h3><p>tags 页是用来展示所有标签的页面，如果在你的博客 source 目录下还没有 tags&#x2F;index.md 文件，那么你就需要新建一个，命令如下（source目录下 右键 git bash here）：</p>
+<p>hexo new page “tags”<br>编辑你刚刚新建的页面文件 &#x2F;source&#x2F;tags&#x2F;index.md，至少需要以下内容：</p>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2018-09-30 18:23:38</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line"></span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="添加emoji表情支持"><a href="#添加emoji表情支持" class="headerlink" title="添加emoji表情支持"></a>添加emoji表情支持</h3><p>安装命令如下：</p>
+<p>npm install hexo-filter-github-emojis –save<br>在 Hexo 根目录下的 _config.yml 文件中，新增以下的配置项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ithubEmojis:</span><br><span class="line">  enable: true</span><br><span class="line">  className: github-emoji</span><br><span class="line">  inject: true</span><br><span class="line">  styles:</span><br><span class="line">  customEmojis:</span><br></pre></td></tr></table></figure>
+
+
+<p>执行 hexo clean &amp;&amp; hexo g 重新生成博客文件，然后就可以在文章中对应位置看到你用 emoji 语法写的表情了。</p>
+<h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><p>由于 Hexo 自带的代码高亮主题显示不好看，所以主题中使用到了 hexo-prism-plugin 的 Hexo 插件来做代码高亮，安装命令如下：</p>
+<p>npm i -S hexo-prism-plugin<br>然后，修改 Hexo 根目录下 _config.yml 文件中 highlight.enable 的值为 false，并新增 prism 插件相关的配置，主要配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">prism_plugin:</span><br><span class="line">  mode: &#x27;preprocess&#x27;    # realtime/preprocess</span><br><span class="line">  theme: &#x27;tomorrow&#x27;</span><br><span class="line">  line_number: false    # default false</span><br><span class="line">  custom_css:</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h3 id="开启中文链接转拼音功能"><a href="#开启中文链接转拼音功能" class="headerlink" title="开启中文链接转拼音功能"></a>开启中文链接转拼音功能</h3><p>如果你的文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 SEO，且 gitment 评论对中文链接也不支持。我们可以用 hexo-permalink-pinyin Hexo 插件使在生成文章时生成中文拼音的永久链接。</p>
+<p>安装命令如下：</p>
+<p>npm i hexo-permalink-pinyin –save<br>在 Hexo 根目录下的 _config.yml 文件中，新增以下的配置项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">permalink_pinyin:</span><br><span class="line">  enable: true</span><br><span class="line">  separator: &#x27;-&#x27; # default: &#x27;-&#x27;</span><br></pre></td></tr></table></figure>
+
+
+<p>注：除了此插件外，hexo-abbrlink 插件也可以生成非中文的链接。</p>
+<h3 id="开启文章字数统计插件"><a href="#开启文章字数统计插件" class="headerlink" title="开启文章字数统计插件"></a>开启文章字数统计插件</h3><p>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 hexo-wordcount 插件。</p>
+<p>安装命令如下：</p>
+<p>npm i –save hexo-wordcount<br>然后只需在本主题下的 _config.yml 文件中，激活以下配置项即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">wordCount:</span><br><span class="line">  enable: false # 将这个值设置为 true 即可.</span><br><span class="line">  postWordCount: true</span><br><span class="line">  min2read: true</span><br><span class="line">  totalCount: true</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="修改页脚"><a href="#修改页脚" class="headerlink" title="修改页脚"></a>修改页脚</h3><p>页脚信息可能需要做定制化修改，而且它不便于做成配置信息，所以可能需要你自己去再修改和加工。修改的地方在主题文件的 <code>/layout/_partial/footer.ejs</code> 文件中，包括站点、使用的主题、访问量等。</p>
+<h3 id="新增和修改社交链接"><a href="#新增和修改社交链接" class="headerlink" title="新增和修改社交链接"></a>新增和修改社交链接</h3><p>在主题的 _config.yml 文件中，默认支持 QQ、GitHub 和邮箱等的配置，你可以在主题文件的 &#x2F;layout&#x2F;_partial&#x2F;social-link.ejs 文件中，新增、修改你需要的社交链接地址，增加链接可参考如下代码：</p>
+<p>新增我的CSDN链接</p>
+<p>&lt;% if (theme.socialLink.csdn) { %&gt;<br>    <a href="<%= theme.socialLink.csdn %>" class="tooltipped" target="_blank" data-tooltip="关注我的CSDN: <%= theme.socialLink.csdn %>" data-position="top" data-delay="50"><br>        <i class="fab fa-csdn">CSDN</i><br>    </a><br>&lt;% } %&gt;<br>接着你需要在主题配置文件下新增CSDN链接</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">socialLink:</span><br><span class="line">  qq: 624597867</span><br><span class="line">  weixin: https://cdn.jsdelivr.net/gh/Yafine/Yafine-imgs/images/wechat.png</span><br><span class="line">  github: </span><br><span class="line">  email: </span><br><span class="line">  facebook: # https://www.facebook.com/xxx</span><br><span class="line">  twitter: # https://twitter.com/xxx</span><br><span class="line">  weibo: # https://weibo.com/xxx</span><br><span class="line">  csdn: https://blog.csdn.net/victoryxa  # 新增CSDN链接</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="自定义修改"><a href="#自定义修改" class="headerlink" title="自定义修改"></a>自定义修改</h3><p>在本主题的 _config.yml 中可以修改部分自定义信息，有以下几个部分：</p>
+<p>菜单<br>我的梦想<br>首页的音乐播放器和视频播放器配置<br>是否显示推荐文章名称和按钮配置<br>favicon 和 Logo<br>个人信息<br>TOC 目录<br>文章打赏信息<br>复制文章内容时追加版权信息<br>MathJax<br>文章字数统计、阅读时长<br>点击页面的’爱心’效果<br>我的项目<br>我的技能<br>我的相册<br>Gitalk、Gitment、Valine 和 disqus 评论配置<br>不蒜子统计和谷歌分析（Google Analytics）<br>默认特色图的集合。当文章没有设置特色图时，本主题会根据文章标题的 hashcode 值取余，来选择展示对应的特色图</p>
+<h3 id="修改主题颜色"><a href="#修改主题颜色" class="headerlink" title="修改主题颜色"></a>修改主题颜色</h3><p>在主题文件的 &#x2F;source&#x2F;css&#x2F;matery.css 文件中，搜索 .bg-color 来修改背景颜色：</p>
+<p>&#x2F;* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. <em>&#x2F;<br>.bg-color {<br>    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);<br>}<br>&#x2F;<em>如果想去掉banner图的颜色渐变效果，请将以下的css属性注释掉或者删除掉即可</em>&#x2F;<br>@-webkit-keyframes rainbow {<br>   &#x2F;</em> 动态切换背景颜色. <em>&#x2F;<br>}<br>@keyframes rainbow {<br>    &#x2F;</em> 动态切换背景颜色. *&#x2F;<br>}</p>
+<h3 id="修改banner图和文章特色图"><a href="#修改banner图和文章特色图" class="headerlink" title="修改banner图和文章特色图"></a>修改banner图和文章特色图</h3><p>你可以直接在 &#x2F;source&#x2F;medias&#x2F;banner 文件夹中更换你喜欢的 banner 图片，主题代码中是每天动态切换一张，只需 7 张即可。如果你会 JavaScript 代码，可以修改成你自己喜欢切换逻辑，如：随机切换等，banner 切换的代码位置在 &#x2F;layout&#x2F;_partial&#x2F;bg-cover-content.ejs 文件的 &#96;&#96; 代码中：</p>
+<p>$(‘.bg-cover’).css(‘background-image’, ‘url(&#x2F;medias&#x2F;banner&#x2F;‘ + new Date().getDay() + ‘.jpg)’);<br>说明： banner图即为你博客主页所显示的图片 （默认为 0.jpg ）</p>
+<h3 id="修改网站上的相关信息"><a href="#修改网站上的相关信息" class="headerlink" title="修改网站上的相关信息"></a>修改网站上的相关信息</h3><p>相关配置信息如下：</p>
+<p>#这</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">是根目录下的配置文件信息</span><br><span class="line">title: 过客~励む   												#这是网站标题</span><br><span class="line">subtitle: 励む    											 #这是网站副标题subtitler</span><br><span class="line"></span><br><span class="line">#下面两个description,keywords，需要填上，如果想让搜索引擎收录，这个做SEO优化必不可忽视的两个属性</span><br><span class="line"></span><br><span class="line">description: 专注于Web,分享生活,分享知识  							#网站描述</span><br><span class="line">keywords: [HTML, CSS, JavaScript, JQuery, React, Vue.js等] 	  #网站的关键词</span><br><span class="line">author: YangAir 											   #作者，文章版权所显示的</span><br><span class="line">language: zh-CN  											   #网站语言，不填写，默认为英文</span><br><span class="line">timezone:   												   #时区，可以不填写</span><br><span class="line"></span><br><span class="line">#这是主题配置文件的相关信息</span><br><span class="line"></span><br><span class="line">#配置网站favicon和网站LOGO</span><br><span class="line"></span><br><span class="line">#此处我用的CDN，也可以使用本地文件</span><br><span class="line"></span><br><span class="line">favicon: https://cdn.jsdelivr.net/gh/Yafine/cdn@3.3.4/source/favicon.png</span><br><span class="line">logo: https://cdn.jsdelivr.net/gh/Yafine/cdn@3.3.4/source/logo.png</span><br><span class="line"></span><br><span class="line">#网站副标题，打字效果</span><br><span class="line"></span><br><span class="line">#如果有符号 ‘ ，请在 ’ 前面加上 \</span><br><span class="line"></span><br><span class="line">subtitle: </span><br><span class="line">  enable: true</span><br><span class="line">  loop: true # 是否循环</span><br><span class="line">  showCursor: true # 是否显示光标</span><br><span class="line">  startDelay: 300 # 开始延迟</span><br><span class="line">  typeSpeed: 100 # 打字速度</span><br><span class="line">  backSpeed: 50 # 删除速度</span><br><span class="line">  sub1: 志之所向，金石为开，谁能御之？</span><br><span class="line">  sub2: 花开不是为了花落，而是为了开的更加灿烂。</span><br><span class="line">  sub3: 没有伞的孩子必须努力奔跑！</span><br><span class="line">  sub4: 欲望以提升热忱，毅力以磨平高山。</span><br><span class="line">  sub5: 如果放弃太早，你永远都不知道自己会错过什么。</span><br><span class="line">  sub6: 没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<p>网站打字效果副标题默认有两个，即 sub1 和 sub2，如果想写多个，则需要修改两处地方，首先修改配置文件，如上面所示，在 sub1 和 sub2 后面继续添加即可，然后在去主题目录下的 layout 文件夹下的_partial 文件夹，修改 bg-cover-content.ejs 文件，大约在 12 行左右，如下面所示：</p>
+ <div class="description center-align">
+     <% if (theme.subtitle.enable) { %>
+         <span id="subtitle"></span>
+        <script>
+            var typed = new Typed("#subtitle", {
+                strings: ['<%= theme.subtitle.sub1 %>',
+                          '<%= theme.subtitle.sub2 %>',
+                          '<%= theme.subtitle.sub3 %>',
+                          '<%= theme.subtitle.sub4 %>',
+                          '<%= theme.subtitle.sub5 %>',
+                          '<%= theme.subtitle.sub6 %>'],
+                 startDelay: <%= theme.subtitle.startDelay %>,
+                 typeSpeed: <%= theme.subtitle.typeSpeed %>,
+                 loop: <%= theme.subtitle.loop %>,   
+                 backSpeed: <%= theme.subtitle.backSpeed %>,
+                 showCursor: <%= theme.subtitle.showCursor %>
+              });
+          </script>
+      <% } else { %>
+            <%= config.description %>
+      <% } %>
+</div>
+
+<h3 id="在关于我页面添加个人简历"><a href="#在关于我页面添加个人简历" class="headerlink" title="在关于我页面添加个人简历"></a>在关于我页面添加个人简历</h3><p>打开 theme&#x2F;matery&#x2F;layout&#x2F;about.ejs 文件，大约在 13 行。有一个 &#96;&#96; 标签，找出其对应结尾的标签，大约在 61 行左右，然后在新增如下代码：</p>
+<div class="card">
+     <div class="card-content">
+         <div class="card-content article-card-content">
+             <div class="title center-align" data-aos="zoom-in-up">
+                 <i class="fa fa-address-book"></i>&nbsp;&nbsp;<%- __('个人简历') %>
+              </div>
+                 <div id="articleContent" data-aos="fade-up">
+                     <%- page.content %>
+                 </div>
+           </div>
+      </div>
+</div>
+注意粘贴的位置和空格要正确，这里的位置随你自己设置，你也可以把简历作为第一个 card，然后 /source/about/index.md 下面写上你的简历了（就像写博客一样）。
+
+
+
+<h3 id="博客的编写以及推送"><a href="#博客的编写以及推送" class="headerlink" title="博客的编写以及推送"></a>博客的编写以及推送</h3><p>第一步：创建.md文件<br>方法1：定位到我们的hexo根目录，Git Bash Here 中执行命令：</p>
+<p>hexo new ‘my-first-blog’ 其中引号内为文章名称</p>
+<p>hexo会帮我们在D:\JAVA项目\HexoData\source_posts 下生成相关.md文件，用这个命令的好处是帮我们自动生成了时间，方法1默认生成如下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: my-first-blot</span><br><span class="line">date: 2021-11-29 18:21:30</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
+
+
+<p>方法2：当然你也可以直接自己打开D:\JAVA项目\HexoData\source_posts 目录新建.md文件</p>
+<p>第二步：编写并保存</p>
+<p>我们只需要用typora打开这个文件就可以开始写博客了，写完后Ctrl+S 保存关闭即可</p>
+<p>第三步：清理然后再生成一下，生成后推送到远程仓库即可，hexo根目录下右键Git Bash Here 中依次输入如下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d </span><br></pre></td></tr></table></figure>
+
+
+<p>补充：hexo new page ‘postName’命令和hexo new ‘postName’的区别？</p>
+<p> hexo new page ‘My-second-blog’最终部署时生成：hexo\public\my-second-blog\index.html，但是它不会作为文章出现在博文目录</p>
+<h3 id="err："><a href="#err：" class="headerlink" title="err："></a>err：</h3><p>使用hexo搭建的blog 需要使用hexo部署到GitHub  使用git推送到GitHub无法通过网址看</p>
+<p>hexo g 时会生成一个.deploy_git 文件   这个文件是关键</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">37Malcolm</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/08/05/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index/">http://example.com/2022/08/05/hexo博客搭建/index/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">37Malcolm</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo</a></div><div class="post_share"><div class="social-share" data-image="/img/index.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/login1.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">37Malcolm</div><div class="author-info__description">归途也还可爱</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/37Malcolm"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/37Malcolm" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.</span> <span class="toc-text">博客初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0-github-%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%B8%8A"><span class="toc-number">2.</span> <span class="toc-text">将博客部署到 github 个人主页上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">切换主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE%E9%A1%B5%E9%9D%A2-%EF%BC%88%E9%A6%96%E9%A1%B5%E7%9A%84%E6%A0%87%E7%AD%BE%E9%80%89%E9%A1%B9%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">创建标签页面 （首页的标签选项）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0emoji%E8%A1%A8%E6%83%85%E6%94%AF%E6%8C%81"><span class="toc-number">5.</span> <span class="toc-text">添加emoji表情支持</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE"><span class="toc-number">6.</span> <span class="toc-text">代码高亮</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E4%B8%AD%E6%96%87%E9%93%BE%E6%8E%A5%E8%BD%AC%E6%8B%BC%E9%9F%B3%E5%8A%9F%E8%83%BD"><span class="toc-number">7.</span> <span class="toc-text">开启中文链接转拼音功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E6%8F%92%E4%BB%B6"><span class="toc-number">8.</span> <span class="toc-text">开启文章字数统计插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E9%A1%B5%E8%84%9A"><span class="toc-number">9.</span> <span class="toc-text">修改页脚</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E5%92%8C%E4%BF%AE%E6%94%B9%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="toc-number">10.</span> <span class="toc-text">新增和修改社交链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9"><span class="toc-number">11.</span> <span class="toc-text">自定义修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2"><span class="toc-number">12.</span> <span class="toc-text">修改主题颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9banner%E5%9B%BE%E5%92%8C%E6%96%87%E7%AB%A0%E7%89%B9%E8%89%B2%E5%9B%BE"><span class="toc-number">13.</span> <span class="toc-text">修改banner图和文章特色图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%BD%91%E7%AB%99%E4%B8%8A%E7%9A%84%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF"><span class="toc-number">14.</span> <span class="toc-text">修改网站上的相关信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E5%85%B3%E4%BA%8E%E6%88%91%E9%A1%B5%E9%9D%A2%E6%B7%BB%E5%8A%A0%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86"><span class="toc-number">15.</span> <span class="toc-text">在关于我页面添加个人简历</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BC%96%E5%86%99%E4%BB%A5%E5%8F%8A%E6%8E%A8%E9%80%81"><span class="toc-number">16.</span> <span class="toc-text">博客的编写以及推送</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#err%EF%BC%9A"><span class="toc-number">17.</span> <span class="toc-text">err：</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/05/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index/" title="hexo博客搭建"><img src="/img/index.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo博客搭建"/></a><div class="content"><a class="title" href="/2022/08/05/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index/" title="hexo博客搭建">hexo博客搭建</a><time datetime="2022-08-05T09:10:49.000Z" title="发表于 2022-08-05 17:10:49">2022-08-05</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/index.jpeg')"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
